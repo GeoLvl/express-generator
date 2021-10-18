@@ -14,3 +14,10 @@ h1 {
 /* .container {
   border: 1px black;
 } */
+
+
+label, input, textarea {
+  display: block;
+  margin: 1rem 0;
+}
+
