@@ -1,0 +1,12 @@
+<h1>Book list</h1>
+
+{{#each booksFromDB}}
+  <div class="container">
+    <p><strong>Author</strong> : {{this.author}}</p>
+
+    <p><strong>Title</strong> : {{this.title}}</p>
+
+    <hr>
+
+  </div>
+{{/each}}
