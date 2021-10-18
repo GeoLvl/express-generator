@@ -1,10 +1,13 @@
 <h1>Book list</h1>
+<hr>
 
 {{#each booksFromDB}}
   <div class="container">
     <p><strong>Author</strong> : {{this.author}}</p>
 
     <p><strong>Title</strong> : {{this.title}}</p>
+
+    <a href="/books/{{this._id}}">More details</a>
 
     <hr>
 
