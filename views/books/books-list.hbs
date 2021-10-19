@@ -1,5 +1,5 @@
 <h1>Book list</h1>
-<hr>
+<hr />
 
 {{#each booksFromDB}}
   <div class="container">
@@ -9,7 +9,11 @@
 
     <a href="/books/{{this._id}}">More details</a>
 
-    <hr>
+    <form action="/books/{{this._id}}/delete" method="post">
+      <button>Delete</button>
+    </form>
+
+    <hr />
 
   </div>
 {{/each}}
